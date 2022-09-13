@@ -1,0 +1,376 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* =======================================================HEADER SECTION============================================================ */
+.header-section{
+    display: flex;
+    justify-content: space-around;
+    background-attachment: fixed;
+    background-color: fuchsia;
+    position: relative;
+}
+/* .logo-section{
+    border: 2px dotted green;
+} */
+.nav-menu{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+.nav-menu .nav-list{
+    padding: 15px;
+    margin: 3px;
+}
+.nav-menu .nav-list:hover{
+    background-color: rgb(155, 79, 226);
+}
+.nav-menu .nav-list a{
+    text-decoration: none;
+    color: blue;
+    font-weight: bolder;
+}
+.nav-menu .nav-list .sub-menu{
+    list-style: none;
+    display: none;
+    /* padding: 10px; */
+}
+.nav-menu .nav-list:hover .sub-menu{
+    display: block;
+    position: absolute;
+    margin-left: -48px;
+    margin-top: 18px;
+}
+.nav-menu .nav-list:hover .sub-menu .sub-list{
+    padding: 10px;
+    background-color: rgba(126, 33, 214, 0.5);
+    border-bottom: 1px solid #fff;
+    text-align: left;
+}
+.nav-menu .nav-list:hover .sub-menu .sub-list:hover{
+    background-color: blueviolet;
+}
+.nav-menu .nav-list:hover .sub-menu .sub-list a{
+    color: #fff;
+}
+.hireme{
+    padding: 10px;
+}
+.hireme:hover{
+    background-color: rgba(126, 33, 214, 0.7)
+}
+.hireme a{
+    text-decoration: none;
+    color: blue;
+    font-weight: bolder;
+    font-size: larger;
+}
+/* ============================================================HERO SECTION========================================================= */  
+.hero-section{
+    background-image: url("/img7.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: fixed;
+    height: 90vh;
+    width: 100%;
+}
+.hero-container{
+    width: 80%;
+    height: 65%;
+    padding: 20%; 
+}
+.hero-container .hero-header{
+    padding: 2%;
+    color: blue;
+}
+.hero-container .hero-text{
+    padding: 2%;
+    font-weight: bolder;
+}
+.hero-container .hero-link{
+    padding: 2%;
+}
+.hero-container .hero-link a{
+    padding: 2%;
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    border-radius: 15%;
+    background-color: blue;
+}
+/* ==========================================================ABOUT SECTION==================================================== */
+.about-section{
+    background: rgb(233, 229, 229);
+    padding: 50px 25px;
+    text-align: center;
+    height: 50vh;
+    width: 100%;
+}
+.about-text p{
+    padding: 5%;
+    line-height: 30px;
+}
+.boxes-section{
+    width: 100%;
+    height: 90vh;
+    background-color: #fff;
+    padding-top: 3%;
+}
+.about-boxes{
+    display: flex;
+    padding: 3%;
+    justify-content: space-between;
+    width: 100%;
+    height: 95%;
+}
+.about-boxes .boxes{ 
+    padding: 5%;
+    border: 2px solid blueviolet;
+    text-align: left;
+    width: 32%;
+    height: 90%;
+}
+.about-boxes .boxes h1{
+    color: blue;
+}
+.about-boxes .boxes p{
+    font-size: 15px;
+    padding-top: 10px;
+    color: blue;
+}
+.services-section{
+    background-color: #fff;
+    width: 100%;
+    height: 90vh;
+}
+.about-services{
+    padding: 3%;
+}
+.about-services .services{
+    margin: 2%;
+    padding: 1px 0px;
+}/* =============================================================PROJECT SECTION============================================== */
+.project-section{
+    background-color: whitesmoke;
+    width: 100%;
+    height: 90vh;
+}
+.project-text{
+    text-align: center;
+    padding: 3%;
+}
+.img-section{
+    display: flex;
+    justify-content: space-between;
+    padding: 1%;
+}
+.img-container{
+    width: 24%;
+    height: 45vh;
+}
+.img-box{
+    width: 100%;
+    height: 68%;
+}
+.img-box img{
+    height: 100%;
+    width: 100%;
+}
+.img-text{
+    height: 32%;
+    width: 100%;
+    padding: 15px;
+    background-color: white;
+}
+.project-link{
+    margin: 5%;
+    text-align: center;
+}
+.project-link a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    background-color: rgba(254, 9, 254, 0.7);
+    padding: 15px;
+    border-radius: 10px;
+}
+.project-link a:hover{
+    background-color: fuchsia;
+}
+/* ==========================================================BLOG SECTION================================================= */
+.blog-section{
+    background-color: #fff;
+    width: 100%;
+    
+}
+.blog-header{
+    padding: 5%;
+    text-align: center;
+}
+.blog-header h2{
+    font-size: 40px;
+}
+.blog-header p{
+    font-size: large;
+}
+.blog-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 5%;
+}
+.blog-details{
+    height: 90vh;
+    width: 32%;
+}
+.blog-img{
+    height: 50%;
+    width: 100%;
+}
+.blog-img img{
+    width: 100%;
+    height: 100%;
+}
+.blog-text{
+    height: 40%;
+    background-color: whitesmoke;
+}
+.blog-text h4{
+    padding: 20px 10px 0px 15px;
+}
+.blog-text h4:hover{
+    color: blueviolet;
+}
+.blog-text p{
+    padding: 0px 10px 10px 15px;
+}
+.blog-link{
+    height: 5%;
+    margin-top: -20px;
+    display: flex;
+    justify-content: flex-end;
+}
+.blog-link a{
+    color: white;
+    background-color: fuchsia;
+    text-decoration: none;
+    padding: 4px;
+    border-radius: 2px;
+    
+}
+.readme-link{
+    margin-top: -20px;
+    display: flex;
+    justify-content: flex-end;
+    height: 5%;
+}
+.readme-link a{
+    color: white;
+    background-color: blue;
+    text-decoration: none;
+    padding: 4px;
+    border-radius: 2px;   
+}
+/* ==============================================================CLIENT REVIEW SECTION============================================    */
+.review-section{
+    background-color: whitesmoke;
+}
+.review-header{
+    padding-top: 10%;
+    text-align: center;
+}
+.review-header h3{
+    font-size: 30px;
+}
+.review-header p{
+    font-size: 20px;
+}
+.review-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 5%;
+}
+.client-container{
+    background-color: #fff;
+    height: 70vh;
+    width: 32%;
+    padding: 15px;
+
+}
+.client-details{
+    display: flex;
+    justify-content: space-around;
+}
+.client-img{
+    height: 9vh;
+    width: 20%;
+}
+.client-img img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+.review-text{
+    padding: 10px 30px 30px 30px;
+}
+.star-icon{
+    color: rgb(127, 127, 228);
+}
+/* =================================================FOOTER SECTION======================================================== */
+.footer-section{
+    background-color: blueviolet;
+    width: 100%;
+    height: 65vh;
+    padding: 5%;
+   
+}
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+.office-container{
+    width: 30%;
+    height: 100%;
+}
+.office-container h5{
+    color: #fff;
+}
+.office-container p{
+    padding-top: 10px;
+    color: #fff;
+}
+.office-container span i{
+    padding: 3%;
+    color: white;
+}
+.contact-container{
+    width: 30%;
+    height: 100%;
+}
+.contact-container h5{
+    padding-top: 10px;
+    color: #fff;
+}
+.contact-container p{
+    color: #fff;
+}
+.contact-container a{
+    color: fuchsia;
+    padding: 0px 5px;
+}
+.newsletter-container{
+    width: 32%;
+    height: 100%;
+}
+.newsletter-container h5{
+    color: #fff;
+}
+.form-group{
+    margin: 20px;
+    padding: 0;
+}
+.form-control{
+    margin: 10px;
+}
